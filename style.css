@@ -16,18 +16,13 @@
 }
 
 
-body {
-  font-family: Georgia, serif;
-  background: var(--white);
-  color: var(--text-dark);
-}
 
 .announcement {
   background: var(--green);
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -90,11 +85,12 @@ body {
   font-size: 38px;
   letter-spacing: 2.5px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .logo img {
   width: 46px;
-  height: 46px;
+  height: 52px;
   background: var(--green);
 }
 
@@ -150,12 +146,14 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 250px 90px;
+  padding: 40px 90px 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   animation: slowZoom 10s ease-in-out infinite;
+  min-height: 680px; 
 }
+
 
 
 .hero-left h1,
@@ -163,14 +161,17 @@ body {
 .hero-btn {
   opacity: 0;
   animation: slideInLeft 1.2s ease forwards;
+  
 }
 
 .hero-left h1 {
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 52px;
+  font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   animation-delay: 0.2s;
+  font-family: "Playfair Display", serif;
+
 }
 
 .hero-left p {
@@ -178,18 +179,21 @@ body {
   line-height: 1.6;
   color: #e5e5e5;
   max-width: 420px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   animation-delay: 0.4s;
+  font-family: "Inter", sans-serif;
+
 }
 
 .hero-left em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
 .hero-btn {
   width: fit-content;
   padding: 12px 26px;
-  font-size: 14px;
+  font-size: 20px;
   border: none;
   background: #fff;
   cursor: pointer;
@@ -280,23 +284,25 @@ body {
 .bestseller {
   background: #fbf6f2;
   padding: 70px 60px;
-  text-align: center;
+  text-align:left;
 }
 
 .bestseller h2 {
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: 560;
   margin-bottom: 26px;
+  font-family: "Playfair Display", serif;
 }
 
 .bestseller h2 em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
 /* Tabs */
 .bestseller-tabs {
   display: flex;
-  justify-content: center;
+  justify-content:left;
   gap: 12px;
   margin-bottom: 50px;
 }
@@ -336,7 +342,7 @@ body {
 
 .product-card h4 {
   margin-top: 18px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
@@ -391,11 +397,12 @@ body {
 /* Button */
 .bestseller-btn {
   padding: 12px 28px;
-  font-size: 14px;
+  font-size: 18px;
   background: #1f4d45;
   color: #fff;
   border: none;
   cursor: pointer;
+
 }
 
 .hero-btn,
@@ -408,9 +415,13 @@ body {
 }
 
 .bestseller-btn:hover {
-  background: #163a34;
+  background: #167061;
 }
 
+.bestseller-btn {
+  display: block;
+  margin: 0 auto;
+}
 
 /* RECENTLY VIEWED  */
 
@@ -488,18 +499,19 @@ body {
 .gift-statement {
   background: #ffffff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 5px;
 }
 
 .gift-statement h2 {
-  font-family: Georgia, serif;
-  font-size: 42px;
-  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 500;
   line-height: 1.25;
   color: #1c1c1c;
 }
 
 .gift-statement em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -609,6 +621,19 @@ body {
   left: 40px;
   color: #fff;
 }
+.promo-content button{
+  background: #1f4d45;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.promo-content button:hover{
+  background: #163a34;
+  transform: translateX(4px);
+}
 
 .promo-content h3 {
   font-size: 52px;
@@ -651,12 +676,14 @@ body {
 /* COLLECTION STRIP */
 .collection-title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 46px;
+  font-weight: 550;
   margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
 }
 
 .collection-title em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -686,7 +713,7 @@ body {
 .collection-item span {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: underline;
 }
 
@@ -706,11 +733,13 @@ body {
 .gifts-title {
   text-align: center;
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 550;
   margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
 }
 
 .gifts-title em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -739,7 +768,7 @@ body {
 }
 
 .gift-card h4 {
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
@@ -761,7 +790,7 @@ body {
   cursor: pointer;
 }
 
-/* CENTER CTA */
+
 .gifts-cta {
   text-align: center;
 }
@@ -817,16 +846,19 @@ body {
   letter-spacing: 1.5px;
   color: #666;
   margin-bottom: 16px;
+  
 }
 
 .ethos-content h2 {
   font-size: 52px;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1.15;
   margin-bottom: 24px;
+  font-family: "Playfair Display", serif;
 }
 
 .ethos-content em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -844,7 +876,7 @@ body {
   background: #1f4d45;
   color: #ffffff;
   border: none;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -890,14 +922,15 @@ body {
 /* RIGHT CONTENT */
 .future-right h2 {
   font-family: "Playfair Display", serif;
-  font-size: 44px;
-  font-weight: 400;
+  font-size: 54px;
+  font-weight: 550;
   line-height: 1.15;
   margin-bottom: 18px;
   
 }
 
 .future-right em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -962,6 +995,7 @@ body {
 }
 
 .reviews-title em {
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -1021,7 +1055,7 @@ body {
   color: #fff;
   padding: 14px 36px;
   border: none;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -1459,6 +1493,7 @@ body {
   .price-card button {
     margin-bottom: 10px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -1492,6 +1527,8 @@ body {
   border: none;
   cursor: pointer;}
 
+  
+
   .collection-strip {
     overflow-x: auto;
     justify-content: flex-start;
@@ -1516,15 +1553,6 @@ body {
   }
 
  
-  .collection-section {
-    display: none;
-  }
-
-
-  .collection-grid,.collection-item,.collection-title {
-    display: none;
-  }
-
 }
 
 
@@ -1764,7 +1792,7 @@ body {
     font-size: 34px;
   }
   .stars {
-  color: #e9f01f;
+  color: #f6ce06;
   margin-bottom: 10px;
 }
 }
@@ -1827,7 +1855,130 @@ body {
 
 
 
+@media (max-width: 768px) {
 
+  .collection-promo .collection-title {
+    font-size: 28px;
+    text-align: center;
+    margin: 30px 0 24px;
+  }
+
+  .collection-promo .collection-strip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 14px;
+    padding: 0 16px;
+  }
+
+  .collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collection-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+
+  .collection-item span {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .collection-promo .collection-title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 32px 0 22px;
+    color: #1c1c1c;
+  }
+
+  .collection-promo collection-title em {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+
+
+
+.mobile-ugc {
+  display: none;
+  padding: 6px 16px;
+  background: #fffaf6;
+}
+
+.ugc-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  color: #1c1c1c;
+}
+
+/* BUTTONS */
+.ugc-actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.ugc-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.ugc-btn.primary {
+  background: #1f4d45;
+  color: #fff;
+  border: none;
+}
+
+.ugc-btn.outline {
+  background: transparent;
+  color: #1f4d45;
+  border: 1.5px solid #1f4d45;
+}
+
+
+.ugc-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+
+.ugc-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.ugc-card {
+  min-width: 190px;
+  height: 185px;
+  background: #cfcfcf;
+  scroll-snap-align: start;
+  border-radius: 2px;
+  
+}
+
+
+@media (max-width: 768px) {
+  .mobile-ugc {
+    display: block;
+  }
+}
 
 
 
